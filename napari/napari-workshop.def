@@ -1,0 +1,105 @@
+Bootstrap: docker
+From: nvidia/cuda:12.5.1-base-ubuntu24.04
+
+%files
+
+%runscript
+    exec vglrun /opt/venv/bin/napari
+
+%environment
+    export PATH="/opt/venv/bin:$PATH"
+    export DEBIAN_FRONTEND=noninteractive
+    export TZ="Europe/London"
+    export QT_XCB_NO_MITSHM=1
+
+%post
+    export DEBIAN_FRONTEND=noninteractive
+
+    apt-get update -y
+
+    apt-get install -y -q --no-install-recommends \
+        wget \
+        curl \
+        ca-certificates \
+        unzip \
+        build-essential \
+        git \
+        cmake \
+        tzdata \
+        locales \
+        software-properties-common \
+        dbus-x11 \
+        libgl1 \
+        libglu1-mesa \
+        libglx-mesa0 \
+        libopengl0 \
+        mesa-utils \
+        libglib2.0-0 \
+        libfontconfig1 \
+        libxrender1 \
+        libxi6 \
+        libblas-dev \
+        liblapack-dev \
+        libatlas-base-dev \
+        libxcb-cursor0 \
+        libxcb-cursor-dev \
+        libxcb-xinerama0 \
+        libxcb-xinput0 \
+        libxcb-xfixes0 \
+        libxcb-shape0 \
+        libxv1 \
+        libxtst6 \
+        libice-dev \
+        libcanberra-gtk-module \
+        libcanberra-gtk3-module \
+        openssh-client \
+        libssl-dev \
+        libcurl4-openssl-dev \
+        libarchive-dev \
+        libegl1 \
+        libxkbcommon-x11-0 \
+        libxcb-icccm4 \
+        libxcb-image0 \
+        libxcb-keysyms1 \
+        libxcb-randr0 \
+        libxcb-render-util0 \
+        x11-utils
+
+    sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen
+
+    add-apt-repository -y ppa:deadsnakes/ppa
+    apt-get update -y
+    apt-get install -y -q --no-install-recommends \
+        python3.11 \
+        python3.11-venv \
+        python3.11-dev
+
+    python3.11 -m venv /opt/venv
+    /opt/venv/bin/pip install --upgrade pip
+
+    /opt/venv/bin/pip install \
+        --extra-index-url https://download.pytorch.org/whl/cu124 \
+        torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 \
+        napari-stitcher \
+        pystackreg \
+        careamics-napari \
+        napari-convpaint \
+        napari-clusters-plotter \
+        napari-skimage-regionprops \
+        apoc \
+        napari-skimage \
+        micro-sam \
+        skan \
+        "napari[all]==0.6.6" \
+        empanada-napari==1.2.4 \
+        git+https://github.com/RoccoDAnt/napari-zelda.git
+
+    wget -q -O- https://packagecloud.io/dcommander/virtualgl/gpgkey | \
+        gpg --dearmor > /etc/apt/trusted.gpg.d/VirtualGL.gpg
+    wget -q -O /etc/apt/sources.list.d/VirtualGL.list \
+        https://raw.githubusercontent.com/VirtualGL/repo/main/VirtualGL.list
+    apt-get update -y
+    apt-get install -y -q --no-install-recommends virtualgl
+
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
