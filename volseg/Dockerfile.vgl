@@ -7,6 +7,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget && \
     apt-get purge -y wget && \
     rm -rf /var/lib/apt/lists/*
 
+RUN cat /proc/sys/kernel/random/uuid | tr -d '-' > /etc/machine-id && \
+    mkdir -p /var/lib/dbus && \
+    ln -sf /etc/machine-id /var/lib/dbus/machine-id
+
 RUN echo 'alias napari="NAPARI_ASYNC=1; vglrun napari"' >> /etc/bash.bashrc
 
 RUN printf '#!/bin/bash\nJUPYTER_PORT="${JUPYTER_PORT:-8888}"\njupyter lab --ip=0.0.0.0 --port="$JUPYTER_PORT" --no-browser --allow-root --NotebookApp.token=""' \

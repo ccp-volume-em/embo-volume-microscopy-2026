@@ -1,0 +1,3 @@
+[submodule "mib-container"]
+	path = mib-container
+	url = git@github.com:rosalindfranklininstitute/mib-container.git
