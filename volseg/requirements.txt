@@ -1,0 +1,9 @@
+volume-segmantics==0.4.0
+pandas
+porespy
+openpnm
+kimimaro
+crackle-codec
+skan
+napari[all]
+jupyterlab

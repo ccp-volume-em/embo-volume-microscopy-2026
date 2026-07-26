@@ -1,0 +1,21 @@
+FROM volseg
+
+RUN apt-get update && apt-get install -y --no-install-recommends wget && \
+    wget https://github.com/VirtualGL/virtualgl/releases/download/3.1.4/virtualgl_3.1.4_amd64.deb && \
+    apt-get install -y --no-install-recommends ./virtualgl_3.1.4_amd64.deb && \
+    rm virtualgl_3.1.4_amd64.deb && \
+    apt-get purge -y wget && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN echo 'alias napari="NAPARI_ASYNC=1; vglrun napari"' >> /etc/bash.bashrc
+
+RUN printf '#!/bin/bash\nJUPYTER_PORT="${JUPYTER_PORT:-8888}"\njupyter lab --ip=0.0.0.0 --port="$JUPYTER_PORT" --no-browser --allow-root --NotebookApp.token=""' \
+    > /usr/local/bin/start-jupyter && \
+    chmod +x /usr/local/bin/start-jupyter
+
+RUN printf '#!/bin/bash\nexport NAPARI_ASYNC=1\nvglrun napari "$@"\n' \
+    > /usr/local/bin/start-napari && \
+    chmod +x /usr/local/bin/start-napari
+
+WORKDIR /opt
+CMD ["bash"]
