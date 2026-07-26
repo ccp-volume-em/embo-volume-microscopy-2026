@@ -14,7 +14,7 @@ software used during the September 2026 EMBO Practical Course
 > Container image: [quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags](https://quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags) (OCI Docker spec)
 
 ## Workshop Instructions (BAND/Ada)
-### BAND
+### BAND (in-person participants)
 1. Napari with plugins
    
    Under **Applications** in the top-left corner Select **Image Analysis > Napari**
@@ -29,7 +29,7 @@ software used during the September 2026 EMBO Practical Course
    
    Under **Applications** Select **Image Analysis > MIB3**
 
-### Ada
+### Ada (online participants)
 1. Napari with plugins
    
    Under **Applications** in the bottom-left corner Select **Software > EMBO Napari**
