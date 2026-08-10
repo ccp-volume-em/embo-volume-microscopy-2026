@@ -5,29 +5,33 @@ software used during the September 2026 EMBO Practical Course
 
 ## Software Deployed
 1. Napari 0.6.6 (Python 3.11) with plugins stitcher, pystackreg, careamics, convpaint, clusters-plotter, skimage-regionprops, apoc, skimage, micro-sam, skan, empanada and zelda
-> Container image: [quay.io/rosalindfranklininstitute/embo-napari-workshop-2026:latest](https://quay.io/repository/rosalindfranklininstitute/embo-napari-workshop-2026) (ORAS Apptainer spec)
+> Container image: [quay.io/rosalindfranklininstitute/embo-napari-workshop-2026](https://quay.io/repository/rosalindfranklininstitute/embo-napari-workshop-2026) (ORAS Apptainer spec)
 
 2. Volume Segmantics 0.4.0 (Python 3.11) with standalone Napari and Jupyter Lab
 > Container image: [quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026](https://quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026) (OCI Docker spec)
 
 3. Microscopy Image Browser 3 (MIB3)
-> Container image: [quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags](https://quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags) (OCI Docker spec)
+> Container image: [quay.io/repository/rosalindfranklininstitute/mib-container](https://quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags) (OCI Docker spec)
+
+4. ilastik 1.4.2
+> Container image: [https://quay.io/repository/ccp-volume-em/ilastik](https://quay.io/repository/ccp-volume-em/ilastik?tab=tags)
 
 ## Workshop Instructions (BAND/Ada)
 ### BAND (in-person participants)
 1. Napari with plugins
    
    Under **Applications** in the top-left corner Select **Image Analysis > Napari**
-3. Volume Segmantics
+2. Volume Segmantics
    
    - Volume Segmantics terminal: Under **Applications** Select **Image Analysis > Volseg Terminal**
 
      Note a copy of the default settings is located at `/scratch/vEM_Data_2026/volseg-settings`
    - Napari: Same as 1.
    - Jupyter Lab: Under **Applications** Select **Programming > JupyterLab**. Select the **Volume Segmnatics** Notebook kernel.
-4. MIB3
-   
+3. MIB3
    Under **Applications** Select **Image Analysis > MIB3**
+4. ilastik
+   Under **Applications** Select **Image Analysis > ilastik**
 
 ### Ada (online participants)
 1. Napari with plugins
@@ -41,5 +45,6 @@ software used during the September 2026 EMBO Practical Course
    - Napari: Under **Applications** Select **Software > EMBO Volseg - Napari**.
    - Jupyter Lab: Under **Applications** Select **Software > EMBO Volseg - JupyterLab**. In the terminal that opens follow the URL to open Jupyter Lab in a browser window. Select the default Python Notebook kernel.
 3. MIB3
-   
    Under **Applications** Select **Software > EMBO MIB3**
+4. ilastik
+   Under **Applications** Select **Software > EMBO ilastik**
