@@ -11,6 +11,7 @@ From: nvidia/cuda:12.5.1-base-ubuntu24.04
     export DEBIAN_FRONTEND=noninteractive
     export TZ="Europe/London"
     export QT_XCB_NO_MITSHM=1
+    export NAPARI_ASYNC=1
 
 %post
     export DEBIAN_FRONTEND=noninteractive
