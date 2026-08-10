@@ -1,0 +1,21 @@
+Bootstrap: localimage
+From: ilastik-gpu-base.sif
+
+%arguments
+    VGL_VERSION=3.1.4
+
+%post
+    apt-get update -y
+    apt-get install -y --no-install-recommends wget
+
+    # VirtualGL to enable OpenGL rendering for a remote host with VritualGL server
+    wget https://github.com/VirtualGL/virtualgl/releases/download/{{ VGL_VERSION }}/virtualgl_{{ VGL_VERSION }}_amd64.deb
+    apt-get install -y --no-install-recommends ./virtualgl_{{ VGL_VERSION }}_amd64.deb
+    rm virtualgl_{{ VGL_VERSION }}_amd64.deb
+
+    apt-get purge -y wget
+    rm -rf /var/lib/apt/lists/*
+
+%runscript
+    export LD_LIBRARY_PATH_NV="$LD_LIBRARY_PATH"
+    exec vglrun /opt/ilastik/run_ilastik.sh "$@"
