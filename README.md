@@ -29,8 +29,10 @@ software used during the September 2026 EMBO Practical Course
    - Napari: Same as 1.
    - Jupyter Lab: Under **Applications** Select **Programming > JupyterLab**. Select the **Volume Segmnatics** Notebook kernel.
 3. MIB3
+   
    Under **Applications** Select **Image Analysis > MIB3**
-4. ilastik
+5. ilastik
+   
    Under **Applications** Select **Image Analysis > ilastik**
 
 ### Ada (online participants)
@@ -58,4 +60,5 @@ configure:
    
     Note a prompt may appear asking you to download model files. Press Continue with download.
 5. ilastik
+   
    Under **Applications** Select **Software > EMBO ilastik (1.4.2)**
