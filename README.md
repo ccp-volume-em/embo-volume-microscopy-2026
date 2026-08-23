@@ -36,15 +36,15 @@ software used during the September 2026 EMBO Practical Course
 ### Ada (online participants)
 1. Napari with plugins
    
-   Under **Applications** in the bottom-left corner Select **Software > EMBO Napari**
+   Under **Applications** in the bottom-left corner Select **Software > EMBO Napari (0.6.6)**
 2. Volume Segmantics
    
    - Volume Segmantics terminal: Under **Applications** Select **Software > EMBO Volseg - Terminal**
    
      Note a copy of the default settings is located at `/opt/volseg-settings`
-   - Napari: Under **Applications** Select **Software > EMBO Volseg - Napari**.
-   - Jupyter Lab: Under **Applications** Select **Software > EMBO Volseg - JupyterLab**. In the terminal that opens follow the URL to open Jupyter Lab in a browser window. Select the default Python Notebook kernel.
+   - Napari: Under **Applications** Select **Software > EMBO Volseg - Napari (0.8.0)**.
+   - Jupyter Lab: Under **Applications** Select **Software > EMBO Volseg - JupyterLab**. In the terminal that opens use CTRL+Click to open the URL `http://127.0.0.1:8888/lab` for Jupyter Lab in a browser window. Select the *default* Python Notebook kernel.
 3. MIB3
-   Under **Applications** Select **Software > EMBO MIB3**
+   Under **Applications** Select **Software > EMBO MIB3 (preview)**
 4. ilastik
-   Under **Applications** Select **Software > EMBO ilastik**
+   Under **Applications** Select **Software > EMBO ilastik (1.4.2)**
