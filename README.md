@@ -46,5 +46,15 @@ software used during the September 2026 EMBO Practical Course
    - Jupyter Lab: Under **Applications** Select **Software > EMBO Volseg - JupyterLab**. In the terminal that opens follow the URL to open Jupyter Lab in a browser window. Select the default Python Notebook kernel.
 3. MIB3
    Under **Applications** Select **Software > EMBO MIB3**
+   In order to use the Segment Anything Model 2 (SAM2) tool, you will need to
+configure:
+        - **Preferences > External Directories**: Chose Python installation path
+          `/opt/miniconda/envs/sam4mib/bin/python3.11` (in the file picker you may
+need to toggle the type of files to 'All types' to see `python3.11`)
+        - Select the Segment Anything Model 2 tool for bottom left pane, select
+          SAM2 and press the Settings Cog Icon. Under PATH to segment-anything-2
+input `/opt/segment-anything-2`
+    Note a prompt may appear asking you to download model files. Press Continue
+with download.
 4. ilastik
    Under **Applications** Select **Software > EMBO ilastik**
