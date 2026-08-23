@@ -34,4 +34,6 @@ WORKDIR /opt
 COPY volseg-settings/ volseg-settings/
 RUN chmod -R a+rX /opt/volseg-settings
 
+ENV NO_ALBUMENTATIONS_UPDATE=1
+
 CMD ["bash"]
