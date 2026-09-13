@@ -17,8 +17,11 @@ software used during the September 2026 EMBO Practical Course
 ## Workshop Instructions (BAND/Ada)
 ### BAND (in-person participants)
 1. Napari with plugins
-   
-   Under **Applications** in the top-left corner Select **Image Analysis > Napari**
+
+    Under **Applications** in the top-left corner Select **Image Analysis > Napari**
+
+    Example datasets should be copied from `/scratch/`
+    
 2. Volume Segmantics
    
    - Volume Segmantics terminal: Under **Applications** Select **Image Analysis > Volseg Terminal**
@@ -28,15 +31,19 @@ software used during the September 2026 EMBO Practical Course
    - Jupyter Lab: Under **Applications** Select **Programming > JupyterLab**. Select the **Volume Segmnatics** Notebook kernel.
 3. MIB3
    
-   Under **Applications** Select **Image Analysis > MIB3**
-5. ilastik
+    Under **Applications** Select **Image Analysis > MIB3**
+    
+    Example datasets should be copied from `/scratch/`
+4. ilastik
    
    Under **Applications** Select **Image Analysis > ilastik**
 
 ### Ada (online participants)
 1. Napari with plugins
    
-   Under **Applications** in the bottom-left corner Select **Software > EMBO Napari (0.6.6)**
+    Under **Applications** in the bottom-left corner Select **Software > EMBO Napari (0.6.6)**
+
+    Example datasets should be copied from `/mnt/shared_materials`
 2. Volume Segmantics
    
    - Volume Segmantics terminal: Under **Applications** Select **Software > EMBO Volseg - Terminal**
@@ -46,17 +53,9 @@ software used during the September 2026 EMBO Practical Course
    - Jupyter Lab: Under **Applications** Select **Software > EMBO Volseg - JupyterLab**. In the terminal that opens use CTRL+Click to open the URL `http://127.0.0.1:8888/lab` for Jupyter Lab in a browser window. Select the *default* Python Notebook kernel.
 3. MIB3
    
-   Under **Applications** Select **Software > EMBO MIB3 (preview)**
-   
-   In order to use the Segment Anything Model 2 (SAM2) tool, you will need to
-configure:
+    Under **Applications** Select **Software > EMBO MIB3 (preview)**
 
-   - **Preferences > External Directories**: Chose Python installation path
-          `/opt/miniconda/envs/sam4mib/bin/python3.11` (in the file picker you may need to toggle the type of files to 'All types' to see `python3.11`)
-   - Select the Segment Anything Model 2 tool for bottom left pane, select
-          SAM2 and press the Settings Cog Icon. Under PATH to segment-anything-2 input `/opt/segment-anything-2`
-   
-    Note a prompt may appear asking you to download model files. Press Continue with download.
-5. ilastik
+    Example datasets should be copied from `/mnt/shared_materials`
+4. ilastik
    
    Under **Applications** Select **Software > EMBO ilastik (1.4.2)**
