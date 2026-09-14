@@ -1,0 +1,38 @@
+# volume-segmantics core (from its pyproject.toml) 
+albumentations
+h5py
+numpy
+matplotlib
+torch
+monai
+segmentation-models-pytorch
+termplotlib
+imagecodecs
+torchseg
+imageio
+scikit-image
+torchmetrics
+termcolor
+sparse
+mrcfile
+pytorch-lightning
+tensorboard
+tensorboardX
+setuptools
+zarr
+
+# for jupyterlab work
+
+pandas            # metrics tables (only an *optional* dep of volume-segmantics)
+porespy           # local thickness + SNOW2 pore network
+openpnm           # pore/throat network
+kimimaro          # TEASAR skeletonisation
+crackle-codec     # required by kimimaro (not auto-installed)
+skan              # skeleton stats / tortuosity / branch angles
+napari[all]       # notebook "view maps" cells (needs a Qt backend)
+jupyterlab        # run the notebooks
+seaborn           # for plotting
+statsmodels       # for regression stats
+
+# volume-segmantics itself is installed separately from its repo, e.g.:
+#   pip install "git+https://github.com/rosalindfranklininstitute/volume-segmantics.git"
