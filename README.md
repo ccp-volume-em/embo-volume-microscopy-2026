@@ -48,7 +48,7 @@ software used during the September 2026 EMBO Practical Course
    
    - Volume Segmantics terminal: Under **Applications** Select **Software > EMBO Volseg - Terminal**
    
-     A copy of the default settings is located at `/mnt/training/course_materials/volseg-settings`. The course notebooks and data can be copied from `/mnt/training/course_materials/quantification-notebooks`.
+     A copy of the default settings is located at `/mnt/training/course_materials/volseg-settings`. The course notebooks and data can be copied from `/mnt/training/course_materials/tutorial_data/quantification-notebooks`. You can get to these locations quickly by selecting 'training' in the file manager or 'Data' in the start menu.
    - Napari: Under **Applications** Select **Software > EMBO Volseg - Napari (0.8.0)**.
    - Jupyter Lab: Under **Applications** Select **Software > EMBO Volseg - JupyterLab**. In the terminal that opens use CTRL+Click to open the URL `http://127.0.0.1:8888/lab` for Jupyter Lab in a browser window. Select the *default* Python Notebook kernel.
 3. MIB3
