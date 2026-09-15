@@ -12,7 +12,7 @@ software used during the September 2026 EMBO Practical Course
 3. Microscopy Image Browser 3 (MIB3)
    - Container image: [quay.io/repository/rosalindfranklininstitute/mib-container](https://quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags) (OCI Docker spec)
 4. ilastik 1.4.2
-   - Container image: [https://quay.io/repository/ccp-volume-em/ilastik](https://quay.io/repository/ccp-volume-em/ilastik?tab=tags)
+   - Container image: [https://quay.io/repository/ccp-volume-em/ilastik](https://quay.io/repository/ccp-volume-em/ilastik?tab=tags) (ORAS Apptainer spec)
 
 ## Workshop Instructions (BAND/Ada)
 ### BAND (in-person participants)
