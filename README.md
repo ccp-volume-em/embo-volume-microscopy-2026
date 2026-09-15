@@ -39,7 +39,7 @@ software used during the September 2026 EMBO Practical Course
    Under **Applications** Select **Image Analysis > ilastik**
 
 ### Ada (online participants)
-Note you can get to course data quickly by selecting 'training' in the file manager or 'Data' in the start menu.
+Note you can get to course data quickly by selecting **training** in the file manager (**Applications > System > File Manager**) or **Data** in the start menu.
 
 1. Napari with plugins
    
