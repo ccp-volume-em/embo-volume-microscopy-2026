@@ -7,3 +7,5 @@ crackle-codec
 skan
 napari[all]
 jupyterlab
+seaborn
+statsmodels
