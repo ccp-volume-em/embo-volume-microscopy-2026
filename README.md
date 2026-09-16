@@ -5,7 +5,7 @@ software used during the September 2026 EMBO Practical Course
 
 ## Software Deployed
 1. Napari 0.6.6 (Python 3.11) with plugins stitcher, pystackreg, careamics, convpaint, clusters-plotter, skimage-regionprops, apoc, skimage, micro-sam, skan, empanada and zelda
-   - Course datasets: https://zenodo.org/records/18187789 and https://zenodo.org/records/15311513
+   - Course datasets: https://zenodo.org/records/18187789, https://zenodo.org/records/15311513 and https://zenodo.org/records/22202983
    - Container image: [quay.io/rosalindfranklininstitute/embo-napari-workshop-2026](https://quay.io/repository/rosalindfranklininstitute/embo-napari-workshop-2026) (ORAS Apptainer spec)
 2. Volume Segmantics 0.4.0 (Python 3.11) with standalone Napari and Jupyter Lab
    - Container image: [quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026](https://quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026) (OCI Docker spec)
