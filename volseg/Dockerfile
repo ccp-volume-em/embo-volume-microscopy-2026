@@ -35,5 +35,6 @@ COPY volseg-settings/ volseg-settings/
 RUN chmod -R a+rX /opt/volseg-settings
 
 ENV NO_ALBUMENTATIONS_UPDATE=1
+ENV LD_LIBRARY_PATH=/usr/local/lib/python3.11/site-packages/nvidia/cudnn/lib:${LD_LIBRARY_PATH}
 
 CMD ["bash"]
