@@ -13,14 +13,19 @@ software used during the September 2026 EMBO Practical Course
    - Container image: [quay.io/repository/rosalindfranklininstitute/mib-container](https://quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags) (OCI Docker spec)
 4. ilastik 1.4.2
    - Container image: [https://quay.io/repository/ccp-volume-em/ilastik](https://quay.io/repository/ccp-volume-em/ilastik?tab=tags) (ORAS Apptainer spec)
+  
+## Workshop Data Copy Instructions (BAND/Ada)
+### BAND (in-person participants)
 
-## Workshop Instructions (BAND/Ada)
+### Ada (online participants)
+
+## Workshop Software Instructions (BAND/Ada)
 ### BAND (in-person participants)
 1. Napari with plugins
 
     Under **Applications** in the top-left corner Select **Image Analysis > Napari**
 
-    Example datasets should be copied from `/scratch/`
+    Example datasets should be copied from `/scratch/vEM_workshop_2026/`
     
 2. Volume Segmantics
    
