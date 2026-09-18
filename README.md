@@ -5,10 +5,14 @@ software used during the September 2026 EMBO Practical Course
 
 ## Software Deployed
 1. Napari 0.6.6 (Python 3.11) with plugins stitcher, pystackreg, careamics, convpaint, clusters-plotter, skimage-regionprops, apoc, skimage, micro-sam, skan, empanada and zelda
-   - Course datasets: https://zenodo.org/records/18187789, https://zenodo.org/records/15311513 and https://zenodo.org/records/22202983
-   - Container image: [quay.io/rosalindfranklininstitute/embo-napari-workshop-2026](https://quay.io/repository/rosalindfranklininstitute/embo-napari-workshop-2026) (ORAS Apptainer spec)
+    - Course datasets: https://zenodo.org/records/18187789, https://zenodo.org/records/15311513 and https://zenodo.org/records/22202983
+    - NucleoNet model: https://zenodo.org/records/18142651
+    - DropNet model: https://zenodo.org/records/15298854
+    - Container image: [quay.io/rosalindfranklininstitute/embo-napari-workshop-2026](https://quay.io/repository/rosalindfranklininstitute/embo-napari-workshop-2026) (ORAS Apptainer spec)
 2. Volume Segmantics 0.4.0 (Python 3.11) with standalone Napari and Jupyter Lab
-   - Container image: [quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026](https://quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026) (OCI Docker spec)
+    - Quantification notebooks and data: [](volseg/quantification-notebooks)
+    - Human Placenta dataset: DOI pending
+    - Container image: [quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026](https://quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026) (OCI Docker spec)
 3. Microscopy Image Browser 3 (MIB3)
    - Container image: [quay.io/repository/rosalindfranklininstitute/mib-container](https://quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags) (OCI Docker spec)
 4. ilastik 1.4.2
