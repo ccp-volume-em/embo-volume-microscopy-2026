@@ -17,7 +17,18 @@ software used during the September 2026 EMBO Practical Course
    - Container image: [quay.io/repository/rosalindfranklininstitute/mib-container](https://quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags) (OCI Docker spec)
 4. ilastik 1.4.2
    - Container image: [https://quay.io/repository/ccp-volume-em/ilastik](https://quay.io/repository/ccp-volume-em/ilastik?tab=tags) (ORAS Apptainer spec)
-  
+
+## Workshop Access Instructions
+### BAND (in-person participants)
+Access: https://band.vm.fedcloud.eu/#/eosc-landingpage
+
+Log in with a Google Account (recommended), select **1 GPU**, and **Create Desktop**. If creation fails, remove the desktop and retry.
+
+**Known bug:** if a large grey error dialogue appears during a session, notify an instructor - an administrator will resolve it.
+
+### Ada (online participants)
+Sign up via the link using your preferred email address. You'll receive a unique URL by email to access the course, where you can create a new workspace.
+   
 ## Workshop Data Copy Instructions (BAND/Ada)
 ### BAND (in-person participants)
 All tutorial data is stored in `/scratch/vEM_workshop_2026/`.
