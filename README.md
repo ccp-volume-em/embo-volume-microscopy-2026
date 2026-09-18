@@ -10,8 +10,8 @@ software used during the September 2026 EMBO Practical Course
     - DropNet model: https://zenodo.org/records/15298854
     - Container image: [quay.io/rosalindfranklininstitute/embo-napari-workshop-2026](https://quay.io/repository/rosalindfranklininstitute/embo-napari-workshop-2026) (ORAS Apptainer spec)
 2. Volume Segmantics 0.4.0 (Python 3.11) with standalone Napari and Jupyter Lab
-    - Quantification notebooks and data: [](volseg/quantification-notebooks)
-    - Human Placenta dataset: DOI pending
+    - Quantification notebooks and data: [volseg/quantification-notebooks](volseg/quantification-notebooks)
+    - Human Placenta dataset: https://www.ebi.ac.uk/empiar/EMPIAR-13952/
     - Container image: [quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026](https://quay.io/repository/rosalindfranklininstitute/embo-volume-segmantics-2026) (OCI Docker spec)
 3. Microscopy Image Browser 3 (MIB3)
    - Container image: [quay.io/repository/rosalindfranklininstitute/mib-container](https://quay.io/repository/rosalindfranklininstitute/mib-container?tab=tags) (OCI Docker spec)
@@ -20,22 +20,31 @@ software used during the September 2026 EMBO Practical Course
   
 ## Workshop Data Copy Instructions (BAND/Ada)
 ### BAND (in-person participants)
+All tutorial data is stored in `/scratch/vEM_workshop_2026/`.
+
+To copy it to your home directory:
+1. Open the file manager (**Home** icon on Desktop), go to **Other locations > scratch**.
+2. Open a second file manager window via **Home**.
+3. Right-click **vEM_workshop_2026** in the first window, *Copy*, then *Paste* into the second.
 
 ### Ada (online participants)
+All tutorial data is stored in `/mnt/training/course_materials/vEM_workshop_2026/`.
+
+To copy it to your home directory:
+1. Open the file manager (**Applications > System > File Manger**), select **Devices > training** and then **course_materials**.
+2. Open a second file manager window (**Applications > System > File Manger**).
+3. Right-click **vEM_workshop_2026** in the first window, *Copy*, then *Paste* into the second.
 
 ## Workshop Software Instructions (BAND/Ada)
 ### BAND (in-person participants)
 1. Napari with plugins
 
     Under **Applications** in the top-left corner Select **Image Analysis > Napari**
-
-    Example datasets should be copied from `/scratch/vEM_workshop_2026/`
     
 2. Volume Segmantics
    
    - Volume Segmantics terminal: Under **Applications** Select **Image Analysis > Volseg Terminal**
 
-     Note a copy of the default settings is located at `/scratch/vEM_Data_2026/volseg-settings`
    - Napari: Same as 1.
    - Jupyter Lab: Under **Applications** Select **Programming > JupyterLab**. Select the **Volume Segmnatics** Notebook kernel.
 3. MIB3
@@ -54,19 +63,16 @@ Note you can get to course data quickly by selecting **training** in the file ma
    
     Under **Applications** in the bottom-left corner Select **Software > EMBO Napari (0.6.6)**
 
-    Example datasets should be copied from `/mnt/training/shared_materials`
 2. Volume Segmantics
    
    - Volume Segmantics terminal: Under **Applications** Select **Software > EMBO Volseg - Terminal**
    
-     A copy of the default settings is located at `/mnt/training/course_materials/volseg-settings`. The course notebooks and data can be copied from `/mnt/training/course_materials/tutorial_data/quantification-notebooks`.
    - Napari: Under **Applications** Select **Software > EMBO Volseg - Napari (0.8.0)**.
    - Jupyter Lab: Under **Applications** Select **Software > EMBO Volseg - JupyterLab**. In the terminal that opens use CTRL+Click to open the URL `http://127.0.0.1:8888/lab` for Jupyter Lab in a browser window. Select the *default* Python Notebook kernel.
 3. MIB3
    
     Under **Applications** Select **Software > EMBO MIB3 (preview)**
 
-    Example datasets should be copied from `/mnt/training/shared_materials`
 4. ilastik
    
    Under **Applications** Select **Software > EMBO ilastik (1.4.2)**
