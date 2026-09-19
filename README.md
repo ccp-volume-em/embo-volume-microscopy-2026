@@ -39,9 +39,10 @@ To copy it to your home directory:
 3. Right-click **vEM_workshop_2026** in the first window, *Copy*, then *Paste* into the second.
 
 ### Ada (online participants)
-All tutorial data is stored in `/mnt/training/course_materials/vEM_workshop_2026/`.
+All tutorial data is stored in `/mnt/training/course_materials/vEM_workshop_2026/`. 
 
-To copy it to your home directory:
+*This should be copied to your home directory automatically when you create a workspace.* 
+In case it does not, you can perform a manual copy:
 1. Open the file manager (**Applications > System > File Manger**), select **Devices > training** and then **course_materials**.
 2. Open a second file manager window (**Applications > System > File Manger**).
 3. Right-click **vEM_workshop_2026** in the first window, *Copy*, then *Paste* into the second.
