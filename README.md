@@ -27,7 +27,7 @@ Log in with a Google Account (recommended), select **1 GPU**, and **Create Deskt
 **Known bug:** if a large grey error dialogue appears during a session, notify an instructor - an administrator will resolve it.
 
 ### Ada (online participants)
-Sign up via the link using your preferred email address. You'll receive a unique URL by email to access the course, where you can create a new workspace.
+A sign-up link will be sent to you via email or shared directly during the workshop. Enter your email on the sign-up page and you'll receive a unique URL by email to access the course, where you can create a new workspace.
    
 ## Workshop Data Copy Instructions (BAND/Ada)
 ### BAND (in-person participants)
